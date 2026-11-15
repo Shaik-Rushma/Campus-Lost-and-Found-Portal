@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item | Campus Lost & Found</title>
+   <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <header>
+        <h2>Campus Lost & Found</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="report-container">
+        <div class="item-card">
+            <h2>Report Lost / Found Item</h2>
+
+            <form id="reportForm">
+
+                <p>Item Name</p>
+                <input type="text" id="name" required>
+
+                <p>Category</p>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <p>Description</p>
+                <textarea id="description" required></textarea>
+
+                <p>Location</p>
+                <input type="text" id="location" required>
+
+                <p>Campus Building</p>
+                <input type="text" id="building" required>
+
+                <p>Date</p>
+                <input type="date" id="date" required>
+
+                <p>Report Type</p>
+                <select id="type" required>
+                    <option value="">Select Type</option>
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select>
+
+                <p>Image URL (Optional)</p>
+                <input type="url" id="image"
+                    placeholder="Paste image URL">
+
+                <button type="submit">Submit Report</button>
+
+            </form>
+
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <script src="report.js"></script>
+</body>
+</html>

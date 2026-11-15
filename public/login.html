@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Campus Lost & Found</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="item-card">
+            <h2>Student Login</h2>
+
+            <form id="loginForm">
+                <p>Email Address</p>
+                <input type="email" id="email" required
+                    placeholder="Enter your email">
+
+                <p>Password</p>
+                <input type="password" id="password" required
+                    placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p id="message"></p>
+
+            <p>Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

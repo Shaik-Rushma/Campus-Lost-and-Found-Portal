@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Campus Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Dashboard Statistics</h2>
+
+<div class="stats-container">
+    <div class="item-card">
+        <h3>Total Users</h3>
+        <p id="totalUsers">Loading...</p>
+    </div>
+
+    <div class="item-card">
+        <h3>Total Items</h3>
+        <p id="totalItems">Loading...</p>
+    </div>
+
+    <div class="item-card">
+        <h3>Pending Claims</h3>
+        <p id="pendingClaims">Loading...</p>
+    </div>
+
+    <div class="item-card">
+        <h3>Approved Claims</h3>
+        <p id="approvedClaims">Loading...</p>
+    </div>
+</div>
+        <h2>Manage Student Claims</h2>
+        <div id="claimsContainer">
+            Loading claims...
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

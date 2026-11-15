@@ -1,0 +1,318 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #263238;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #facc15;
+    color: #172554;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #fde047;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filters input,
+.filters select {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.filters button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #1d4ed8;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.item-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.item-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+
+.item-card p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.item-card button {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
+
+/* ===== REPORT ITEM PAGE ===== */
+
+main.report-container {
+    width: calc(100% - 30px);
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.report-container .item-card {
+    width: 100%;
+    padding: 45px 55px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(23, 37, 84, 0.10);
+}
+
+.report-container h2 {
+    text-align: center;
+    color: #172554;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.report-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.report-container form p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    margin: 12px 0 3px;
+}
+
+.report-container form input,
+.report-container form select,
+.report-container form textarea {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.report-container form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.report-container form input:focus,
+.report-container form select:focus,
+.report-container form textarea:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.report-container form button {
+    width: 230px;
+    height: 50px;
+    margin: 30px auto 5px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.report-container form button:hover {
+    background: #1d4ed8;
+}
+
+.report-container #message {
+    text-align: center;
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+    main.report-container {
+        margin: 25px auto;
+    }
+
+    .report-container .item-card {
+        padding: 25px 20px;
+    }
+
+    .report-container form button {
+        width: 100%;
+    }
+}
+/* Admin Claim Action Buttons */
+#claimsContainer .item-card button {
+    margin-right: 12px;
+    margin-top: 15px;
+    padding: 11px 22px;
+    min-width: 100px;
+}
+
+#claimsContainer .item-card button:last-child {
+    margin-right: 0;
+}
+/* Admin Dashboard Statistics Spacing */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 25px 0 40px;
+}
+
+.stats-container .item-card {
+    margin: 0;
+}
+/* Dashboard Section Spacing */
+#myItems {
+    margin-bottom: 35px;
+}
+
+#myClaims {
+    margin-top: 25px;
+}
+
+#myItems .item-card,
+#myClaims .item-card {
+    margin-bottom: 20px;
+}
+.empty-message {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    text-align: center;
+    color: #64748b;
+}
+/* Spacing between reported item cards */
+#myItems .item-card {
+    margin-bottom: 25px;
+}

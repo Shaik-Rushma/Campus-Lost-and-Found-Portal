@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found | Sai University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Campus Lost & Found</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="report.html">Report Item</a>
+            <a href="dashboard.html">My Dashboard</a>
+            <a href="admin.html">Admin Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Lost Something on Campus?</h1>
+        <p>Find your belongings or help someone reunite with theirs.</p>
+        <a href="report.html" class="btn">Report Lost / Found Item</a>
+    </section>
+
+    <main class="container">
+        <h2>Recently Reported Items</h2>
+
+        <div class="filters">
+            <input type="text" id="searchInput"
+                placeholder="Search items...">
+
+            <select id="typeFilter">
+                <option value="">All Items</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="text" id="buildingFilter"
+                placeholder="Filter by building...">
+
+            <button onclick="loadItems()">Search</button>
+        </div>
+
+        <div id="itemsContainer" class="items-grid">
+            <p>Loading items...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Sai University | Campus Lost & Found Portal</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
