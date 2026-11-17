@@ -17,33 +17,39 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div class="item-card">
-            <h2>Create Your Account</h2>
+    <main class="auth-container">
+    <div class="auth-card">
+        <h2>Create Your Account</h2>
 
-            <form id="registerForm">
-                <p>Full Name</p>
+        <form id="registerForm" class="auth-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
                 <input type="text" id="name" required
                     placeholder="Enter your full name">
+            </div>
 
-                <p>Email Address</p>
+            <div class="form-group">
+                <label for="email">Email Address</label>
                 <input type="email" id="email" required
                     placeholder="Enter your email">
+            </div>
 
-                <p>Password</p>
+            <div class="form-group">
+                <label for="password">Password</label>
                 <input type="password" id="password" required
                     minlength="6" placeholder="Minimum 6 characters">
+            </div>
 
-                <button type="submit">Register</button>
-            </form>
+            <button type="submit">Register</button>
+        </form>
 
-            <p id="message"></p>
+        <p id="message"></p>
 
-            <p>Already registered?
-                <a href="login.html">Login here</a>
-            </p>
-        </div>
-    </main>
+        <p class="auth-link">Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+    </div>
+</main>
 
     <script src="register.js"></script>
 </body>
