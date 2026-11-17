@@ -83,9 +83,10 @@ router.post("/login", async (req, res) => {
             }
         });
 
-    } catch (error) {
-        res.status(500).json({ message: "Login failed." });
-    }
+ } catch (error) {
+    console.error("Login Error:", error);
+    res.status(500).json({ message: "Login failed." });
+}
 });
 
 module.exports = router;
